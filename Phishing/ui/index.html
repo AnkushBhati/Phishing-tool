@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOC Threat Intelligence Intel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="soc-container">
+        <header>
+            <div class="status-badge"><span class="pulse-dot"></span> SYSTEM OPERATIONAL</div>
+            <h1>⚡ THREAT INTEL ENGINE</h1>
+            <p>ADVANCED PHISHING URL ANALYZER</p>
+        </header>
+
+        <div class="input-section">
+            <input type="text" id="urlInput" placeholder="ENTER TARGET URL FOR INFRASTRUCTURE SCANNING...">
+            <button id="scanBtn">EXECUTE SCAN</button>
+        </div>
+
+        <div id="loader" class="loader hidden">RUNNING DEEP INFRASTRUCTURE LOOKUPS...</div>
+
+        <div id="resultPanel" class="result-panel hidden">
+            <div class="verdict-banner" id="verdictBanner">
+                <span id="verdictLabel">VERDICT: UNKNOWN</span>
+                <span id="scoreLabel">SCORE: 0/100</span>
+            </div>
+            
+            <div class="meter-container">
+                <div id="meterBar" class="meter-bar"></div>
+            </div>
+
+            <div class="meta-grid">
+                <div class="meta-card">
+                    <h5>SERVER IP ADDRESS</h5>
+                    <p id="ipLabel">N/A</p>
+                </div>
+                <div class="meta-card">
+                    <h5>REGISTRY AGE METRIC</h5>
+                    <p id="ageLabel">N/A</p>
+                </div>
+            </div>
+
+            <div class="indicators-box">
+                <h4>🔍 FLAGGED THREAT INDICATORS</h4>
+                <ul id="indicatorsList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
