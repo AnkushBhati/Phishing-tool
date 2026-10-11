@@ -1,0 +1,8 @@
+fastapi>=0.100.0
+uvicorn>=0.22.0
+gunicorn>=21.2.0
+tldextract>=3.4.4
+python-whois>=0.8.0
+checkdmarc>=5.0.0
+slowapi>=0.1.8
+pydantic>=2.0
